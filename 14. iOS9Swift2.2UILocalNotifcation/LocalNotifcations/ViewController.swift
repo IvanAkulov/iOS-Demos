@@ -9,17 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
   }
-
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
-
+  
   func sendNotification() {
     let notification = UILocalNotification()
     notification.alertTitle = "alert title"
@@ -32,9 +32,8 @@ class ViewController: UIViewController {
   
   @IBAction func sendLocalNotification(sender: UIButton) {
     sendNotification()
-    
     print("notification will appear in 5 seconds")
   }
-
+  
 }
 
