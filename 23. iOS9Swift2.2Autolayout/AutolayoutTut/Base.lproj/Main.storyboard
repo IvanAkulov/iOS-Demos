@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutolayoutTut" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GqX-Wd-OCl">
+                                <rect key="frame" x="20" y="236" width="260" height="128"/>
+                                <color key="backgroundColor" red="0.18381662736136395" green="1" blue="0.19522073230600234" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="mgP-bS-5Ln"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdF-Lt-Tu6">
+                                <rect key="frame" x="325" y="236" width="260" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.47450301738212564" blue="0.25866315352433233" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="T11-hu-MMz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GqX-Wd-OCl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Htc-pS-R9V"/>
+                            <constraint firstItem="GqX-Wd-OCl" firstAttribute="width" secondItem="QdF-Lt-Tu6" secondAttribute="width" id="PIx-oc-qdM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QdF-Lt-Tu6" secondAttribute="trailing" constant="-5" id="VYz-SB-nkP"/>
+                            <constraint firstItem="QdF-Lt-Tu6" firstAttribute="leading" secondItem="GqX-Wd-OCl" secondAttribute="trailing" constant="45" id="W66-Lo-vVC"/>
+                            <constraint firstItem="QdF-Lt-Tu6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gA9-3d-lSX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="GqX-Wd-OCl" secondAttribute="leading" id="xAK-LJ-jhX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="443"/>
+        </scene>
+    </scenes>
+</document>
