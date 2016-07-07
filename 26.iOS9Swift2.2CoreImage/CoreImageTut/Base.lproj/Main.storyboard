@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreImageTut" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="R8g-fZ-ePJ">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="A0J-Jv-VMs"/>
+                                    <constraint firstAttribute="height" constant="300" id="LUY-hX-gD3"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39O-6a-z7x">
+                                <rect key="frame" x="274" y="468" width="52" height="30"/>
+                                <state key="normal" title="Filter it!"/>
+                                <connections>
+                                    <action selector="filterIt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Snz-yR-AZo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="39O-6a-z7x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="12z-8r-cLR"/>
+                            <constraint firstItem="R8g-fZ-ePJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jxx-XB-Wus"/>
+                            <constraint firstItem="R8g-fZ-ePJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V65-df-734"/>
+                            <constraint firstItem="39O-6a-z7x" firstAttribute="top" secondItem="R8g-fZ-ePJ" secondAttribute="bottom" constant="18" id="bZ6-Ip-fNd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="R8g-fZ-ePJ" id="Bmn-jU-VAx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1" width="600" height="600"/>
+    </resources>
+</document>
