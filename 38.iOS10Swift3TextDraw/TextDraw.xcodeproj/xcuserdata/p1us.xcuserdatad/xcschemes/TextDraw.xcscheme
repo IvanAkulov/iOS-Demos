@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "35180ED01DFECB150014AB19"
-               BuildableName = "TableViewCellMovement.app"
-               BlueprintName = "TableViewCellMovement"
-               ReferencedContainer = "container:TableViewCellMovement.xcodeproj">
+               BlueprintIdentifier = "3587CC0D1E10EF09009AD886"
+               BuildableName = "TextDraw.app"
+               BlueprintName = "TextDraw"
+               ReferencedContainer = "container:TextDraw.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35180ED01DFECB150014AB19"
-            BuildableName = "TableViewCellMovement.app"
-            BlueprintName = "TableViewCellMovement"
-            ReferencedContainer = "container:TableViewCellMovement.xcodeproj">
+            BlueprintIdentifier = "3587CC0D1E10EF09009AD886"
+            BuildableName = "TextDraw.app"
+            BlueprintName = "TextDraw"
+            ReferencedContainer = "container:TextDraw.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35180ED01DFECB150014AB19"
-            BuildableName = "TableViewCellMovement.app"
-            BlueprintName = "TableViewCellMovement"
-            ReferencedContainer = "container:TableViewCellMovement.xcodeproj">
+            BlueprintIdentifier = "3587CC0D1E10EF09009AD886"
+            BuildableName = "TextDraw.app"
+            BlueprintName = "TextDraw"
+            ReferencedContainer = "container:TextDraw.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35180ED01DFECB150014AB19"
-            BuildableName = "TableViewCellMovement.app"
-            BlueprintName = "TableViewCellMovement"
-            ReferencedContainer = "container:TableViewCellMovement.xcodeproj">
+            BlueprintIdentifier = "3587CC0D1E10EF09009AD886"
+            BuildableName = "TextDraw.app"
+            BlueprintName = "TextDraw"
+            ReferencedContainer = "container:TextDraw.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
