@@ -1,6 +1,0 @@
-framework module Locksmith {
-  umbrella header "Locksmith-umbrella.h"
-
-  export *
-  module * { export * }
-}
