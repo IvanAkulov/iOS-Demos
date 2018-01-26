@@ -20,9 +20,10 @@ class ViewController: UIViewController {
 
     private func setupGestures() {
     
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapped))
-        tapGesture.numberOfTapsRequired = 1
-        button.addGestureRecognizer(tapGesture)
+        button.addTarget(self, action: #selector(tapped), for: .touchUpInside)
+//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapped))
+//        tapGesture.numberOfTapsRequired = 1
+//        button.addGestureRecognizer(tapGesture)
     }
     
     @objc
