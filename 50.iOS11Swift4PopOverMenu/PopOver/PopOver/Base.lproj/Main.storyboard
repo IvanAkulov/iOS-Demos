@@ -24,11 +24,6 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="zi5-mR-oZd" kind="popoverPresentation" popoverAnchorView="ypb-FB-EcY" id="tU6-qj-h4t">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.75416268358955074" blue="0.5651992227880962" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
