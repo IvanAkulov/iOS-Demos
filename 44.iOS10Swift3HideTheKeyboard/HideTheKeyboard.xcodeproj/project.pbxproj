@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					3549C9801E5590BC00AF489C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5H969S6YFE;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5H969S6YFE;
 				INFOPLIST_FILE = HideTheKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.HideTheKeyboard;
@@ -272,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5H969S6YFE;
 				INFOPLIST_FILE = HideTheKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.HideTheKeyboard;
@@ -299,6 +302,7 @@
 				3549C9951E5590BC00AF489C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
