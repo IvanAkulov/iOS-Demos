@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol ExpandableHeaderViewDelegate {
+protocol ExpandableHeaderViewDelegate: class {
     func toggleSection(header: ExpandableHeaderView, section: Int)
 }
 
 class ExpandableHeaderView: UITableViewHeaderFooterView {
 
-    var delegate: ExpandableHeaderViewDelegate?
+    weak var delegate: ExpandableHeaderViewDelegate?
     var section: Int?
     
     func setup(withTitle title: String, section: Int, delegate: ExpandableHeaderViewDelegate) {
@@ -23,17 +23,17 @@ class ExpandableHeaderView: UITableViewHeaderFooterView {
         self.section = section
         self.textLabel?.text = title
     }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
+
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
         
         textLabel?.textColor = .white
         contentView.backgroundColor = .darkGray
     }
+
     
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
-        
         addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(selectHeaderAction)))
     }
     
