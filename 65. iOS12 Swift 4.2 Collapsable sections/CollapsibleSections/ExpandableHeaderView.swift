@@ -24,9 +24,8 @@ class ExpandableHeaderView: UITableViewHeaderFooterView {
         self.textLabel?.text = title
     }
 
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        
+    override func layoutSubviews() {
+        super.layoutSubviews()
         textLabel?.textColor = .white
         contentView.backgroundColor = .darkGray
     }
