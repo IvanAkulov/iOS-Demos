@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DownloadImageWithProgress" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mOC-ji-Eee">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ywy-Mn-y6L">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCm-oU-RES">
+                                <rect key="frame" x="145" y="394" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="l1X-sL-O4b">
+                                <rect key="frame" x="112.5" y="466" width="150" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="wW3-m4-jkt"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ywy-Mn-y6L" firstAttribute="centerX" secondItem="mOC-ji-Eee" secondAttribute="centerX" id="8wK-Yz-C7P"/>
+                            <constraint firstItem="Ywy-Mn-y6L" firstAttribute="centerY" secondItem="mOC-ji-Eee" secondAttribute="centerY" id="ApM-ib-Aj5"/>
+                            <constraint firstItem="l1X-sL-O4b" firstAttribute="top" secondItem="xCm-oU-RES" secondAttribute="bottom" constant="51" id="AsE-gp-hKr"/>
+                            <constraint firstItem="xCm-oU-RES" firstAttribute="centerX" secondItem="mOC-ji-Eee" secondAttribute="centerX" id="DCu-l6-aJ1"/>
+                            <constraint firstItem="mOC-ji-Eee" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GT8-EK-UG4"/>
+                            <constraint firstItem="l1X-sL-O4b" firstAttribute="centerX" secondItem="mOC-ji-Eee" secondAttribute="centerX" id="Ttm-sJ-SJj"/>
+                            <constraint firstItem="xCm-oU-RES" firstAttribute="top" secondItem="Ywy-Mn-y6L" secondAttribute="bottom" constant="50.5" id="bBt-LG-YuG"/>
+                            <constraint firstItem="mOC-ji-Eee" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bl3-RN-IzB"/>
+                            <constraint firstItem="mOC-ji-Eee" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hjY-Gs-gAD"/>
+                            <constraint firstItem="mOC-ji-Eee" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="zA3-1B-Caj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Ywy-Mn-y6L" id="UGY-NU-18E"/>
+                        <outlet property="completedLabel" destination="xCm-oU-RES" id="4WD-O2-xUt"/>
+                        <outlet property="imageView" destination="mOC-ji-Eee" id="CXA-nL-7fS"/>
+                        <outlet property="progressView" destination="l1X-sL-O4b" id="LB7-I9-0Cn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
